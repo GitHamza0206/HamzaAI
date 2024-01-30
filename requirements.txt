@@ -6,3 +6,4 @@ langchain_openai==0.0.5
 mistralai==0.0.12
 openai==1.10.0
 streamlit==1.27.2
+pypdf
