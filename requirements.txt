@@ -7,3 +7,7 @@ mistralai==0.0.12
 openai==1.10.0
 streamlit==1.27.2
 pypdf
+tiktoken
+faiss-cpu
+PyPDF2==3.0.1
+chromadb
