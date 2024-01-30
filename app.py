@@ -15,8 +15,11 @@ import streamlit as st
 import os
 from langchain_openai import OpenAIEmbeddings
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 # Function to reset the state
 def reset_state():
     for key in st.session_state:

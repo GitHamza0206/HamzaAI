@@ -11,4 +11,4 @@ streamlit==1.27.2
 pypdf
 tiktoken
 faiss-cpu
-sqlite3
+pysqlite3-binary
