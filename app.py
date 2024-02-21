@@ -1,5 +1,4 @@
-from langchain_mistralai.chat_models import ChatMistralAI
-from mistralai.models.chat_completion import ChatMessage
+
 import streamlit as st 
 import openai 
 from langchain.vectorstores import Chroma
@@ -16,8 +15,8 @@ import os
 from langchain_openai import OpenAIEmbeddings
 import sys
 
-#__import__('pysqlite3')
-#sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 # Function to reset the state
