@@ -36,7 +36,6 @@ import streamlit as st
 app = FastAPI()
 
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
-#os.environ["OPENAI_API_KEY"] = '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'
 
 templatev4 = """
             Description : IA imitant Hamza Zerouali, répond à questions sur profil et projets, utilise bullet points
